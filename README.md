@@ -2,7 +2,7 @@
 
 ## Method
 
-![Experience Replay with Logit Adjusted Softmax](method.png "Experience Replay with Logit Adjusted Softmax")
+<img src="./method.png" width="800">
 
 ## Requirements 
 * python>=3.8
