@@ -1,8 +1,22 @@
+<div align="center">
+
 # Online Continual Learning via Logit Adjusted Softmax 
+[![preprint](https://img.shields.io/badge/arXiv-2311.06460-B31B1B
+)](https://arxiv.org/abs/2311.06460)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Venue:TMLR](https://img.shields.io/badge/Venue-TMLR-112467)](https://openreview.net/forum?id=MyQKcQAte6&referrer=%5BAuthor%20Console%5D)
+</div>
 
-## Method
 
-<img src="./method.png" width="800">
+<p align="center">
+  <img src="./method.png" width="800">
+  <br />
+  <span>Figure 1: The diagram of Experience Replay (ER) with our proposed Logit Adjusted Softmax and
+a batch-wise sliding-window estimator (ER-LAS). LAS helps mitigate the inter-class imbalance problem by
+adding label frequencies to predicted logits.</span>
+</p>
+
+This is the code for the TMLR paper [Online Continual Learning via Logit Adjusted Softmax](https://arxiv.org/abs/2311.06460).
 
 ## Requirements 
 * python>=3.8
@@ -54,4 +68,17 @@ sh main.sh mir_las seq-cifar100 2000 1.0 1
 * To run ASER $_\mu$-LAS with $\tau=1.0$ and $l=1$ on TinyImageNet, buffer size is $2k$:
 ```
 sh main.sh aser_las seq-tinyimg 2000 1.0 1
+```
+
+## Citing our work
+```
+@article{
+huang2024online,
+title={Online Continual Learning via Logit Adjusted Softmax},
+author={Zhehao Huang and Tao Li and Chenhe Yuan and Yingwen Wu and Xiaolin Huang},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=MyQKcQAte6}
+}
 ```
